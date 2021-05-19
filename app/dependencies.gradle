@@ -1,0 +1,102 @@
+ext {
+
+    kotlin_version = '1.4.31'
+
+    def coreKtxVersion = '1.3.2'
+    def appcompatVersion = '1.2.0'
+    def materialComponentsVersion = '1.4.0-alpha01'
+    def lottieVersion = '3.3.1'
+    def eventBusVersion = '3.2.0'
+    def sdpVersion = '1.0.6'
+    def constraintLayoutVersion = '2.0.4'
+    def recyclerViewVersion = '1.1.0'
+    def roomVersion = "2.2.6"
+    def coroutinesVersion = "1.4.2"
+    def navigationComponentsVersion = "2.3.3"
+    def glideVersion = "4.11.0"
+    def mapBoxVersion = "9.0.0"
+    def googleMapVersion = "17.1.0"
+    def googleMapServiceVersion = "17.0.0"
+    def easyPermissionsVersion = "3.0.0"
+    def mpAndroidChartVersion = 'v3.1.0'
+    def lifecycleVersion = "2.3.0"
+    def daggerVersion = '2.31.2'
+    def junitVersion = '4.13.1'
+    def junitAndroidVersion = '1.1.2'
+    def espressoVersion = '3.3.0'
+    def liveDataTestVersion = "2.1.0"
+    def assertkVersion = "0.23.1"
+
+    generalDependencies = [
+//            implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+            kotlin : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            coreKtx : "androidx.core:core-ktx:$coreKtxVersion",
+            appcompat: "androidx.appcompat:appcompat:$appcompatVersion",
+            materialComponents : "com.google.android.material:material:$materialComponentsVersion",
+            constraintLayout : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            recyclerView : "androidx.recyclerview:recyclerview:$recyclerViewVersion",
+            room : "androidx.room:room-runtime:$roomVersion",
+            roomCoroutines : "androidx.room:room-ktx:$roomVersion",
+            mpAndroidChart : "com.github.PhilJay:MPAndroidChart:$mpAndroidChartVersion",
+            viewModel : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion",
+            liveData : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion",
+            ativityKtx: "androidx.activity:activity-ktx:$appcompatVersion",
+    ]
+
+    commonDependencies = [
+            lottie   : "com.airbnb.android:lottie:$lottieVersion",
+            eventBus : "org.greenrobot:eventbus:$eventBusVersion",
+            sdp      : "com.intuit.sdp:sdp-android:$sdpVersion",
+            toasty   : "com.github.GrenderG:Toasty:1.5.0",
+    ]
+
+    coroutines = [
+            coroutinesCore : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion",
+            coroutinesAndroid : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion",
+    ]
+
+    navigationComponents = [
+            navigationFragment : "androidx.navigation:navigation-fragment-ktx:$navigationComponentsVersion",
+            navigationUi : "androidx.navigation:navigation-ui-ktx:$navigationComponentsVersion",
+    ]
+
+    glide = [
+            glide : "com.github.bumptech.glide:glide:$glideVersion",
+    ]
+
+    mapBox = [
+            mapBox : "com.mapbox.mapboxsdk:mapbox-android-sdk:$mapBoxVersion",
+            pluginLocationlayer : 'com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.5.0',
+            pluginPlaces : 'com.mapbox.mapboxsdk:mapbox-android-plugin-places:0.4.0',
+            pluginLocalization : 'com.mapbox.mapboxsdk:mapbox-android-plugin-localization-v9:0.12.0',
+    ]
+
+    googleMaps = [
+            googleMapslocation : "com.google.android.gms:play-services-location:$googleMapVersion",
+            googleMapsServices : "com.google.android.gms:play-services-maps:$googleMapServiceVersion",
+    ]
+
+    dependencyInjection = [
+            dagger : "com.google.dagger:dagger:$daggerVersion",
+    ]
+
+    easyPermissions = [
+            easyPermissions : "pub.devrel:easypermissions:$easyPermissionsVersion",
+    ]
+
+    annotations = [
+            room : "androidx.room:room-compiler:$roomVersion",
+            dagger : "com.google.dagger:dagger-compiler:$daggerVersion",
+            coroutines : "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion",
+//            glide : "com.github.bumptech.glide:compiler$glideVersion",
+    ]
+
+    testDependencies = [
+            junit : "junit:junit:$junitVersion",
+            junitAndroid : "androidx.test.ext:junit:$junitAndroidVersion",
+            espresso : "androidx.test.espresso:espresso-core:$espressoVersion",
+            liveData : "androidx.arch.core:core-testing:$liveDataTestVersion",
+            room : "androidx.room:room-testing:$roomVersion",
+            assertk : "com.willowtreeapps.assertk:assertk-jvm:$assertkVersion",
+    ]
+}

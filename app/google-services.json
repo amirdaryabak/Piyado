@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "993704273931",
+    "firebase_url": "https://runningapp-fe508.firebaseio.com",
+    "project_id": "runningapp-fe508",
+    "storage_bucket": "runningapp-fe508.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993704273931:android:8fb34e33e5df8ec47fff0e",
+        "android_client_info": {
+          "package_name": "com.amirdaryabak.runningapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993704273931-imq3fdab44fn2vev6o5r770cpsa7p5gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBckNEBJf70R0EqzfacBNhgax7sKKibZGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993704273931-imq3fdab44fn2vev6o5r770cpsa7p5gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

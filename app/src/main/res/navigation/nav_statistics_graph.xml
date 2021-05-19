@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_statistics_graph"
+    app:startDestination="@id/statisticsFragment">
+
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.amirdaryabak.runningapp.ui.fragments.StatisticsFragment"
+        android:label="@string/your_statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/runningFragment"
+        android:name="com.amirdaryabak.runningapp.ui.fragments.RunningFragment"
+        android:label="@string/running_place"
+        tools:layout="@layout/fragment_running" >
+    </fragment>
+    <action
+        android:id="@+id/action_global_runningFragment"
+        app:destination="@id/runningFragment" />
+    <fragment
+        android:id="@+id/runItemFragment"
+        android:name="com.amirdaryabak.runningapp.ui.fragments.RunItemFragment"
+        android:label="@string/running_detail"
+        tools:layout="@layout/fragment_run_item" >
+        <argument
+            android:name="runId"
+            app:argType="integer" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_runItemFragment"
+        app:destination="@id/runItemFragment" />
+
+</navigation>

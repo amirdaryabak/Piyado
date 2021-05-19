@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.amirdaryabak.runningapp"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 112
+        versionName "1.1.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    androidExtensions {
+        experimental = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation generalDependencies.values()
+
+    implementation commonDependencies.values()
+
+    implementation coroutines.values()
+
+    implementation navigationComponents.values()
+
+    implementation glide.values()
+
+    implementation mapBox.values()
+
+    implementation googleMaps.values()
+
+    implementation easyPermissions.values()
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    kapt annotations.values()
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+
+    testImplementation testDependencies.values()
+
+    androidTestImplementation testDependencies.values()
+
+    implementation "androidx.browser:browser:1.3.0"
+
+    //Dagger - Hilt
+    def hiltVersion = "2.31.2-alpha"
+    implementation "com.google.dagger:hilt-android:$hiltVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
+
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02"
+
+    // Timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+
+    // AppMetrica SDK.
+    implementation 'com.yandex.android:mobmetricalib:3.18.0'
+
+}

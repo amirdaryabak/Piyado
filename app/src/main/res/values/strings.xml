@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name">Piyado</string>
+    <string-array name="filter_options">
+        <item>تاریخ</item>
+        <item>زمان دویدن</item>
+        <item>مسافت</item>
+        <item>میانگین سرعت</item>
+        <item>کالری سوخته شده</item>
+    </string-array>
+    <string name="sort_by">مرتب سازی براساس:</string>
+    <string name="your_list_is_empty">لیست خالی است</string>
+    <string name="start_a_run">شروع دویدن</string>
+    <string name="home">خانه</string>
+    <string name="statistics">آمار</string>
+    <string name="settings">تنظیمات</string>
+    <string name="apply_changes">ذخیره مشخصات</string>
+    <string name="name">نام</string>
+    <string name="familyName">نام خانوادگی</string>
+    <string name="your_weight">وزن شما</string>
+    <string name="your_age">سن شما</string>
+    <string name="total_time">کل زمان</string>
+    <string name="total_calories_burned">کل کالری سوخته شده</string>
+    <string name="total_distance">کل مسافت</string>
+    <string name="average_speed">میانگین سرعت</string>
+    <string name="start">شروع</string>
+    <string name="start_again">ادامه</string>
+    <string name="finish_run">پایان</string>
+    <string name="pause">متوقف کردن</string>
+    <string name="lets_go"> بزن بریم </string>
+    <string name="run_saved_successfully">اطلاعات ذخیره شد</string>
+    <string name="average_speed_over_time">میانگین سرعت در طول زمان</string>
+    <string name="date">تاریخ</string>
+    <string name="duration">مدت زمان</string>
+    <string name="avg_speed">میانگین سرعت</string>
+    <string name="distance">مسافت</string>
+    <string name="calories_burned">کالری سوخته شده</string>
+    <string name="time">زمان</string>
+    <string name="calories">کالری</string>
+    <string name="continue_">ادامه</string>
+    <string name="please_enter_your_information">لطفا مشخصات خود را وارد کنید.</string>
+    <string name="saved_changes">اطلاعات ذخیره شد</string>
+    <string name="please_enter_all_the_fields">لطفا تمام اطلاعات را پر کنید</string>
+    <string name="dialog_message">آیا مطمئن هستید که میخواهید انصراف دهید؟</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+
+    <string name="enter_name">لطفا نام خود را وارد کنید</string>
+    <string name="enter_valid_name">لطفا نام معتبر وارد کنید</string>
+    <string name="enter_family_name">لطفا نام خانوادگی خود را وارد کنید</string>
+    <string name="enter_valid_family_name">لطفا نام خانوادگی معتبر وارد کنید</string>
+    <string name="enter_weight">لطفا وزن خود را وارد کنید</string>
+    <string name="enter_age">لطفا سن خود را وارد کنید</string>
+    <string name="location_permissions">برای استفاده از این قسمت، شما باید دسترسی لوکیشن بدهید</string>
+    <string name="cancel_run">انصراف از دویدن</string>
+    <string name="your_information">مشخصات شما</string>
+    <string name="change_your_information">تغییر مشخصات شما</string>
+    <string name="personal_information">اطلاعات فردی</string>
+    <string name="gender">جنسیت</string>
+    <string name="male">آقا</string>
+    <string name="female">خانم</string>
+    <string name="welcome">خوش آمدید</string>
+    <string name="running_place">محل دویدن :)</string>
+    <string name="profile">پروفایل</string>
+    <string name="your_statistics">آمار شما</string>
+    <string name="running_detail">جزئیات دویدن</string>
+    <string name="share_content">اشتراک گذاری</string>
+    <string name="theme_setting">تنظیمات تم برنامه</string>
+
+    <string name="preference_file_key" translatable="false">com.example.android.while_in_use_location.PREFERENCE_FILE_KEY</string>
+    <string name="no_location_text" translatable="false">No current location</string>
+    <string name="launch_activity" translatable="false">Launch activity</string>
+    <string name="stop_location_updates_button_text" translatable="false">Stop receiving location updates</string>
+    <string name="start_location_updates_button_text" translatable="false">Start receiving location updates</string>
+    <string name="permission_rationale" translatable="false">Location permission needed for core functionality</string>
+    <string name="permission_denied_explanation" translatable="false">Permission was denied, but is needed for core functionality.</string>
+
+
+
+</resources>
+
+    <!--<resources>
+        <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB6dcRwtOVYnT2V7YCZ6smovTFJa6b-i9A</string>
+        <string name="access_token" translatable="false">pk.eyJ1IjoiYW1pcmRhcnlhYmFrIiwiYSI6ImNrazB1dDV6ZzAzZDcycHFvY2ZjOXE0cW8ifQ.7YIyZo8jQ5X9EyKA7b6NrQ"</string>
+        <string name="app_name">Running Zone</string>
+        <string-array name="filter_options">
+            <item>Date</item>
+            <item>Running Time</item>
+            <item>Distance</item>
+            <item>Average Speed</item>
+            <item>Calories Burned</item>
+        </string-array>
+        <string name="sort_by">Sort by:</string>
+        <string name="your_list_is_empty">Your list is empty</string>
+        <string name="start_a_run">Start A run</string>
+        <string name="home">Home</string>
+        <string name="statistics">Statistics</string>
+        <string name="settings">Settings</string>
+        <string name="apply_changes">Apply Changes</string>
+        <string name="name">Name</string>
+        <string name="familyName">Family name</string>
+        <string name="your_weight">Your Weight</string>
+        <string name="your_age">Your Age</string>
+        <string name="total_time">Total Time</string>
+        <string name="total_calories_burned">Total Calories Burned</string>
+        <string name="total_distance">Total Distance</string>
+        <string name="average_speed">Average Speed</string>
+        <string name="start">Start</string>
+        <string name="start_again">Continue</string>
+        <string name="finish_run">Finish Run</string>
+        <string name="pause">pause</string>
+        <string name="lets_go">Let\'s go, </string>
+        <string name="run_saved_successfully">Run saved successfully</string>
+        <string name="average_speed_over_time">Avg Speed Over Time</string>
+        <string name="date">DATE</string>
+        <string name="duration">DURATION</string>
+        <string name="avg_speed">AVG SPEED</string>
+        <string name="distance">DISTANCE</string>
+        <string name="calories_burned">CALORIES BURNED</string>
+        <string name="time">TIME</string>
+        <string name="calories">CALORIES</string>
+        <string name="continue_">Continue</string>
+        <string name="please_enter_your_information">Please enter your Information.</string>
+        <string name="saved_changes">Saved changes</string>
+        <string name="please_enter_all_the_fields">Please enter all the fields</string>
+        <string name="dialog_message">Are you sure to cancel the current run and delete all its data?</string>
+        <string name="yes">Yes</string>
+        <string name="no">No</string>
+
+        <string name="enter_name">Please enter name</string>
+        <string name="enter_valid_name">Please enter a valid name</string>
+        <string name="enter_family_name">Please enter last name</string>
+        <string name="enter_valid_family_name">Please enter a valid last name</string>
+        <string name="enter_weight">Please enter weight</string>
+        <string name="enter_age">Please enter age</string>
+        <string name="location_permissions">You need to accept location permissions to use this app.</string>
+        <string name="cancel_run">Cancel Run</string>
+        <string name="your_information">Your Information</string>
+        <string name="change_your_information">Change Your Information</string>
+        <string name="personal_information">Personal Information</string>
+        <string name="gender">Gender</string>
+        <string name="male">Male</string>
+        <string name="female">Female</string>
+        <string name="welcome">Welcome</string>
+        <string name="running_place">Running :)</string>
+        <string name="profile">Profile</string>
+        <string name="your_statistics">Your Statistics</string>
+
+        <string name="preference_file_key" translatable="false">com.example.android.while_in_use_location.PREFERENCE_FILE_KEY</string>
+        <string name="no_location_text" translatable="false">No current location</string>
+        <string name="launch_activity" translatable="false">Launch activity</string>
+        <string name="stop_location_updates_button_text" translatable="false">Stop receiving location updates</string>
+        <string name="start_location_updates_button_text" translatable="false">Start receiving location updates</string>
+        <string name="permission_rationale" translatable="false">Location permission needed for core functionality</string>
+        <string name="permission_denied_explanation" translatable="false">Permission was denied, but is needed for core functionality.</string>
+        <string name="running_detail">Run Detail</string>
+        <string name="share_content">Share</string>
+        <string name="theme_setting">Theme Setting</string>
+
+    </resources>-->

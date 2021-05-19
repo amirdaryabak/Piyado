@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_profile_graph"
+    app:startDestination="@id/profileFragment">
+
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.amirdaryabak.runningapp.ui.fragments.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_nightModeDialog"
+            app:destination="@id/nightModeDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/nightModeDialog"
+        android:name="com.amirdaryabak.runningapp.ui.fragments.NightModeDialog"
+        android:label="dialog_night_mode"
+        tools:layout="@layout/dialog_night_mode" />
+
+
+    <fragment
+        android:id="@+id/runningFragment"
+        android:name="com.amirdaryabak.runningapp.ui.fragments.RunningFragment"
+        android:label="@string/running_place"
+        tools:layout="@layout/fragment_running" >
+    </fragment>
+    <action
+        android:id="@+id/action_global_runningFragment"
+        app:destination="@id/runningFragment" />
+    <fragment
+        android:id="@+id/runItemFragment"
+        android:name="com.amirdaryabak.runningapp.ui.fragments.RunItemFragment"
+        android:label="@string/running_detail"
+        tools:layout="@layout/fragment_run_item" >
+        <argument
+            android:name="runId"
+            app:argType="integer" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_runItemFragment"
+        app:destination="@id/runItemFragment" />
+</navigation>

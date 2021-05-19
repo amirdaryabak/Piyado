@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+
+    <item android:state_enabled="true" android:state_activated="false"
+        android:drawable="@drawable/rounded_et_color_primary_left"/>
+    <item android:state_enabled="false" android:state_activated="false"
+        android:drawable="@drawable/rounded_et_color_primary_left_filled"/>
+    <item android:state_activated="true" android:state_enabled="true"
+        android:drawable="@drawable/rounded_et_color_primary_left_red_border"/>
+
+</selector>

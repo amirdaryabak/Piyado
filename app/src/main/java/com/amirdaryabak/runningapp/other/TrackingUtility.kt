@@ -1,0 +1,81 @@
+package com.amirdaryabak.runningapp.other
+
+import android.Manifest
+import android.content.Context
+import android.location.Location
+import android.os.Build
+import pub.devrel.easypermissions.EasyPermissions
+import java.util.concurrent.TimeUnit
+
+object TrackingUtility {
+
+    fun hasLocationPermissions(context: Context) =
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
+            EasyPermissions.hasPermissions(
+                context,
+                Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            )
+        } else {
+            EasyPermissions.hasPermissions(
+                context,
+                Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION,
+                Manifest.permission.ACCESS_BACKGROUND_LOCATION
+            )
+        }
+
+    /*fun calculatePolylineLength(coordinates: ArrayList<ArrayList<Double>>): Float {
+        var distance = 0f
+        val result = FloatArray(1)
+        Location.distanceBetween(
+            latLng.latitude,
+            latLng.longitude,
+            latLng2.latitude,
+            latLng2.longitude,
+            result
+        )
+        distance += result[0]
+        return distance
+    }*/
+
+    fun calculateCoordinatesLength(coordinates: ArrayList<ArrayList<Double>>): Float {
+        var distance = 0f
+        for(i in 0..coordinates.size - 2) {
+            val pos1Latitude = coordinates[i][0]
+            val pos1Longitude = coordinates[i][1]
+            val pos2Latitude = coordinates[i+1][0]
+            val pos2Longitude = coordinates[i+1][1]
+
+            val result = FloatArray(1)
+            Location.distanceBetween(
+                pos1Latitude,
+                pos1Longitude,
+                pos2Latitude,
+                pos2Longitude,
+                result
+            )
+            distance += result[0]
+        }
+        return distance
+    }
+
+    fun getFormattedStopWatchTime(ms: Long, includeMillis: Boolean = false): String {
+        var milliseconds = ms
+        val hours = TimeUnit.MILLISECONDS.toHours(milliseconds)
+        milliseconds -= TimeUnit.HOURS.toMillis(hours)
+        val minutes = TimeUnit.MILLISECONDS.toMinutes(milliseconds)
+        milliseconds -= TimeUnit.MINUTES.toMillis(minutes)
+        val seconds = TimeUnit.MILLISECONDS.toSeconds(milliseconds)
+        if (!includeMillis) {
+            return "${if (hours < 10) "0" else ""}$hours:" +
+                    "${if (minutes < 10) "0" else ""}$minutes:" +
+                    "${if (seconds < 10) "0" else ""}$seconds"
+        }
+        milliseconds -= TimeUnit.SECONDS.toMillis(seconds)
+        milliseconds /= 10
+        return "${if (hours < 10) "0" else ""}$hours:" +
+                "${if (minutes < 10) "0" else ""}$minutes:" +
+                "${if (seconds < 10) "0" else ""}$seconds"
+    }
+}

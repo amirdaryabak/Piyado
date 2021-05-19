@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">پیادو</string>
+    <string-array name="filter_options">
+        <item>تاریخ</item>
+        <item>زمان دویدن</item>
+        <item>مسافت</item>
+        <item>میانگین سرعت</item>
+        <item>کالری سوخته شده</item>
+    </string-array>
+    <string name="sort_by">مرتب سازی براساس:</string>
+    <string name="your_list_is_empty">لیست خالی است</string>
+    <string name="start_a_run">شروع دویدن</string>
+    <string name="home">خانه</string>
+    <string name="statistics">آمار</string>
+    <string name="settings">تنظیمات</string>
+    <string name="apply_changes">ذخیره مشخصات</string>
+    <string name="name">نام</string>
+    <string name="familyName">نام خانوادگی</string>
+    <string name="your_weight">وزن شما</string>
+    <string name="your_age">سن شما</string>
+    <string name="total_time">کل زمان</string>
+    <string name="total_calories_burned">کل کالری سوخته شده</string>
+    <string name="total_distance">کل مسافت</string>
+    <string name="average_speed">میانگین سرعت</string>
+    <string name="start">شروع</string>
+    <string name="start_again">ادامه</string>
+    <string name="finish_run">پایان</string>
+    <string name="pause">متوقف کردن</string>
+    <string name="lets_go"> بزن بریم </string>
+    <string name="run_saved_successfully">اطلاعات ذخیره شد</string>
+    <string name="average_speed_over_time">میانگین سرعت در طول زمان</string>
+    <string name="date">تاریخ</string>
+    <string name="duration">مدت زمان</string>
+    <string name="avg_speed">میانگین سرعت</string>
+    <string name="distance">مسافت</string>
+    <string name="calories_burned">کالری سوخته شده</string>
+    <string name="time">زمان</string>
+    <string name="calories">کالری</string>
+    <string name="continue_">ادامه</string>
+    <string name="please_enter_your_information">لطفا مشخصات خود را وارد کنید.</string>
+    <string name="saved_changes">اطلاعات ذخیره شد</string>
+    <string name="please_enter_all_the_fields">لطفا تمام اطلاعات را پر کنید</string>
+    <string name="dialog_message">آیا مطمئن هستید که میخواهید انصراف دهید؟</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+
+    <string name="enter_name">لطفا نام خود را وارد کنید</string>
+    <string name="enter_valid_name">لطفا نام معتبر وارد کنید</string>
+    <string name="enter_family_name">لطفا نام خانوادگی خود را وارد کنید</string>
+    <string name="enter_valid_family_name">لطفا نام خانوادگی معتبر وارد کنید</string>
+    <string name="enter_weight">لطفا وزن خود را وارد کنید</string>
+    <string name="enter_age">لطفا سن خود را وارد کنید</string>
+    <string name="location_permissions">برای استفاده از این قسمت، شما باید دسترسی لوکیشن بدهید</string>
+    <string name="cancel_run">انصراف از دویدن</string>
+    <string name="your_information">مشخصات شما</string>
+    <string name="change_your_information">تغییر مشخصات شما</string>
+    <string name="personal_information">اطلاعات فردی</string>
+    <string name="gender">جنسیت</string>
+    <string name="male">آقا</string>
+    <string name="female">خانم</string>
+    <string name="welcome">خوش آمدید</string>
+    <string name="running_place">محل دویدن :)</string>
+    <string name="profile">پروفایل</string>
+    <string name="your_statistics">آمار شما</string>
+    <string name="running_detail">جزئیات دویدن</string>
+    <string name="share_content">اشتراک گذاری</string>
+    <string name="theme_setting">تنظیمات تم برنامه</string>
+
+
+</resources>

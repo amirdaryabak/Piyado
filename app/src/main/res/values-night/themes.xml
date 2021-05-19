@@ -1,0 +1,226 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Original AppCompat attributes. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/vazir_medium</item>
+        <!--> toolbar color -->
+        <item name="colorSurface">@color/black</item>
+    </style>
+
+    <style name="TextViewStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--region <<<<<<<<<< TEXTS >>>>>>>>>>-->
+
+    <style name="MyTextVazirLight" parent="Theme.AppTheme">
+        <item name="android:fontFamily">@font/vazir_light</item>
+    </style>
+    <style name="MyTextVazirUltraLight" parent="Theme.AppTheme">
+        <item name="android:fontFamily">@font/vazir_ultra_light</item>
+    </style>
+    <style name="MyTextKoodak" parent="Theme.AppTheme">
+        <item name="android:fontFamily">@font/koodak_bold</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+    </style>
+
+    <style name="TitleText" parent="MyTextVazirLight">
+        <item name="android:textSize">@dimen/_15sdp</item>
+    </style>
+
+    <style name="TitleText.PrimaryColor" parent="MyTextVazirLight">
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TitleText.AccentColor" parent="MyTextVazirLight">
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleText.Gray" parent="TitleText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TitleText.Gray.Big" parent="TitleText.Gray">
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+
+    <style name="TitleText.Black" parent="TitleText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TitleText.Black.Small" parent="TitleText.Black">
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="TitleText.Black.Big" parent="TitleText.Black">
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+
+    <style name="TitleText.White" parent="TitleText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TitleText.White.Small" parent="TitleText.White">
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="TitleText.StateEnableOrDisable" parent="TitleText">
+        <item name="android:textColor">@drawable/text_view_h2_states_night</item>
+    </style>
+
+    <style name="SubTitleText" parent="MyTextVazirLight">
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+
+    <style name="SubTitleText.Gray" parent="SubTitleText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SubTitleText.PrimaryColor" parent="SubTitleText">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="SubTitleText.White" parent="SubTitleText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SubTitleText.Black" parent="SubTitleText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SubTitleText.Gray.Small" parent="SubTitleText.Gray">
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+    <style name="SubTitleText.Gray.Small.AccentColor" parent="SubTitleText.Gray">
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:textColor">@color/logoRed</item>
+    </style>
+
+    <style name="SubTitleText.StateEnableOrDisableOrError" parent="SubTitleText">
+        <item name="android:textColor">@drawable/edit_profile_custom_btn_selected_deselected_txt_night</item>
+    </style>
+
+    <style name="SubTitleText.StateEnableOrDisableOrError.Filtering" parent="SubTitleText.StateEnableOrDisableOrError">
+        <item name="android:textColor">@drawable/edit_profile_custom_btn_selected_deselected_txt_night</item>
+    </style>
+
+    <style name="SubTitleText.Small.StateEnableOrDisableOrError.Filtering" parent="SubTitleText.Gray.Small">
+        <item name="android:textColor">@drawable/edit_profile_custom_btn_selected_deselected_txt_night</item>
+    </style>
+
+    <style name="SubTitleText.StateEnableOrDisableOrError.Left" parent="SubTitleText.StateEnableOrDisableOrError">
+        <item name="android:background">@drawable/edit_profile_custom_btn_left_selected_deselected_night</item>
+    </style>
+
+    <style name="SubTitleText.StateEnableOrDisableOrError.Center" parent="SubTitleText.StateEnableOrDisableOrError">
+        <item name="android:background">@drawable/edit_profile_custom_btn_center_selected_deselected_night</item>
+    </style>
+
+    <style name="SubTitleText.StateEnableOrDisableOrError.Right" parent="SubTitleText.StateEnableOrDisableOrError">
+        <item name="android:background">@drawable/edit_profile_custom_btn_right_selected_deselected_night</item>
+    </style>
+
+    <style name="HelperText" parent="MyTextVazirUltraLight">
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+    <style name="HelperText.Gray" parent="HelperText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="HelperText.Gray.Big" parent="HelperText.Gray">
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+
+    <style name="TitleNumbers" parent="MyTextKoodak">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--endregion-->
+
+    <!--region <<<<<<<<<< BUTTONS >>>>>>>>>>-->
+
+    <style name="MyTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:fontFamily">@font/vazir_light</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+
+    <style name="MyButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/vazir_light</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+
+    <!--<style name="CustomButton.DisableOrEnable" parent="MyButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_btn_enabled_disabled</item>
+    </style>-->
+
+    <style name="CustomButton" parent="MyTextButton">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomButton.Transparent" parent="MyTextButton">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="CustomButton.Enabled" parent="MyTextButton">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:backgroundTint">@color/black_cards</item>
+    </style>
+
+    <style name="CustomButton.Disabled" parent="MyTextButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/gray_4</item>
+    </style>
+
+    <style name="CustomButton.Rounded" parent="MyTextButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/black_solid</item>
+    </style>
+
+    <!--endregion-->
+
+    <!--region <<<<<<<<<< Backgrounds >>>>>>>>>>-->
+
+    <style name="MainBackground" parent="Theme.AppTheme">
+        <item name="android:background">@color/black_solid</item>
+    </style>
+
+    <style name="MainBackground.White" parent="MainBackground">
+        <item name="android:background">@color/black_cards</item>
+    </style>
+
+    <style name="MainBackground.Primary" parent="MainBackground">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="ClMainBackground.Transparent" parent="Theme.AppTheme">
+        <item name="android:background">@color/black_75</item>
+    </style>
+
+    <!--<style name="ClBackground.Rounded3" parent="Theme.AppTheme">
+        <item name="android:background">@drawable/bg_root_black_bottom_border</item>
+    </style>
+
+    <style name="Filtering" parent="Theme.AppTheme">
+        <item name="android:background">@drawable/bg_item_selected_night</item>
+    </style>
+
+    <style name="Card" parent="Theme.AppTheme">
+        <item name="android:background">@drawable/rounded_et_black_border_black</item>
+    </style>
+
+    <style name="HeaderSearch.ET" parent="Theme.AppTheme">
+        <item name="android:background">@drawable/et_black_green_border</item>
+    </style>-->
+
+    <!--endregion-->
+
+</resources>

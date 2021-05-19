@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md_blue_50">#E3F2FD</color>
+    <color name="md_blue_100">#BBDEFB</color>
+    <color name="md_blue_200">#90CAF9</color>
+    <color name="md_blue_300">#64B5F6</color>
+    <color name="md_blue_400">#42A5F5</color>
+    <color name="md_blue_500">#2196F3</color>
+    <color name="md_blue_700">#1976D2</color>
+    <color name="md_blue_800">#1565C0</color>
+    <color name="md_blue_900">#0D47A1</color>
+    <color name="md_blue_A100">#82B1FF</color>
+    <color name="md_blue_A200">#448AFF</color>
+    <color name="md_blue_A400">#2979FF</color>
+    <color name="md_blue_A700">#2962FF</color>
+    <color name="errorColor">#D50000</color>
+
+    <!--  ====================================================================  -->
+    <!--  > COMMON                                                              -->
+    <!--  ====================================================================  -->
+    <color name="glass">#92FFFFFF</color>
+
+    <color name="logoGreen">#276734</color>
+    <color name="logoRed">#C94044</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#3B7C90</color>
+    <color name="gray_1">#444444</color>
+    <color name="gray_2">#555555</color>
+    <color name="gray_3">#707070</color>
+    <color name="gray_4">#979797</color>
+    <color name="gray_5">#EEEEEE</color>
+    <color name="gray_5_75">#BFEEEEEE</color>
+    <color name="off_white">#F7F8E2</color>
+    <color name="off_white_50">#80F7F8E2</color>
+    <color name="transparent">#00000000</color>
+
+    <!--  ====================================================================  -->
+    <!--  > LIGHT MODE COLORS                                                   -->
+    <!--  ====================================================================  -->
+    <color name="colorPrimary">#415A80</color>
+    <color name="colorPrimaryDark">#415A80</color>
+    <color name="colorAccent">#FFE600</color>
+<!--    <color name="colorAccent">#A5D4DC</color>-->
+<!--    <color name="colorAccent2">#F2F4F8</color>-->
+    <color name="colorAccent3">#D7E2E9</color>
+
+    <!--  ====================================================================  -->
+    <!--  > DARK MODE COLORS                                                    -->
+    <!--  ====================================================================  -->
+    <color name="black_solid">#111111</color>
+    <color name="black_cards">#222222</color>
+    <color name="black_75">#BF3A3C42</color>
+    <color name="black_50">#803A3C42</color>
+
+</resources>
